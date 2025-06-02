@@ -7,8 +7,19 @@ The purpose of this project is to create a graphical user interface (GUI) or Con
 - View and query campaign-related information
 - Easy-to-use MySQL connection and schema setup
 - Connection testing script for debugging
-## Requirements:
-In order to run this application your python must be up to date and you must have the mySQL connecter package downloaded. The mySQL connector package can be downloaded by running the command `pip install mysql-connector-python`
+## Usage Instructions:
+1. Clone the repository on to your system
+2. Ensure MySQL and a Python IDE is installed and running on your system.
+3. Download the `mySQL connector package` by running the command `pip install mysql-connector-python` in your terminal
+4. Open MySQL and execute the `FEC_DB_Ready.sql` file to create the database schema and insert sample data.
+5. Open either `FEC_DB_app.py` (GUI) or `FEC_DB_Console.py` (console) in a Python environment.
+6. Update the `password` and `database` variables at the top of the Python files to match your MySQL setup.
+7. Run the desired interface:
+   ```bash
+   python FEC_DB_app.py       # For the graphical interface
+   python FEC_DB_Console.py   # For the console interface
+   ```
+8. Use the app to interact with the database (view, add, edit, delete records).
 
 ## Project Files:
 ### `FEC_DB_app.py`:
